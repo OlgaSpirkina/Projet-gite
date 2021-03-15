@@ -1,0 +1,154 @@
+@charset "UTF-8";
+html {
+  padding: 0% 15%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+#header_in_accueil {
+  background-image: url("https://raw.githubusercontent.com/HedyKatherine/Projet-gite/master/images/ban.jpeg");
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+#header_in_accueil nav {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+#header_in_accueil h1 {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  background-color: white;
+  display: inline-block;
+  background: transparent;
+}
+
+.la_page_daccueil {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.la_page_daccueil {
+  flex-direction: column;
+}
+.la_page_daccueil .all_in_slide {
+  width: 100%;
+}
+
+.about_family {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about_family img {
+  height: 40vh;
+  margin: 10px 0;
+}
+.about_family .family_explain {
+  width: 60%;
+  padding: 2%;
+  text-align: justify;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/4 - 4/4), le text affiché sur les images-carousel indiquant l'ordre des images */
+.number {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.second_number,
+.fourth_number {
+  color: #000;
+}
+
+/* Next & previous buttons, les boutons sur le carousel pour lister */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positionner "next button" à droite */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover effet sur les butons de carousel */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Les points en-dessous des images de carousel indiquant le nombre d'images */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
