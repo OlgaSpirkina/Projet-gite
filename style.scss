@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "banniere";
 @import "body";
 @import "typo";
@@ -6,6 +7,7 @@ body{
 }
 #header_in_accueil{
     @include banniere;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -16,11 +18,62 @@ body{
         display: flex;
         justify-content: space-around;
     }
+=======
+@import 'body';
+@import 'typo';
+@import 'banniere';
+@import 'desktop';
+@import 'services';
+@import 'laptop';
+@import 'tablet';
+@import 'mobileg';
+
+
+header {
+    @include banniere;
+    display: flex;
+    justify-content: center;
+>>>>>>> 5e2b401e35d2032de5c2ee63a7f2badf11017f6c
     h1 {
     @include typo-titre;
     background-color: white;
     display: inline-block;
+<<<<<<< HEAD
     background: transparent;
+=======
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    nav{
+        width: 100%;
+        padding: 1% 5%;
+        display: flex;
+        justify-content: space-between;
+        & a{
+          text-decoration: none;
+          color: #000;
+          text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #a1a1a1;
+          background-image: linear-gradient(to right, #DCF8EF, #b0b0b0);
+          width: 7vw;
+          height: 2vh;
+          text-align: center;
+          padding: 1.2%;
+          border-radius: 5%;
+          font-size: 2.5rem;
+          &:hover{
+            text-transform: uppercase;
+          }
+        }
+    }
+    h1 {
+    @include typo-titre;
+    font-size: 5rem;
+    background-color: white;
+    display: inline-block;
+    background: transparent;
+    margin-top: 2px;
+>>>>>>> olga
     }
 }
 .la_page_daccueil{
@@ -32,6 +85,10 @@ body{
 
 .la_page_daccueil{
   flex-direction: column;
+<<<<<<< HEAD
+=======
+  font-size: 2rem;
+>>>>>>> olga
   .all_in_slide{
     width: 100%;
   }
@@ -56,6 +113,12 @@ body{
   position: relative;
   margin: auto;
 }
+<<<<<<< HEAD
+=======
+.image_hidden{
+  display: none;
+}
+>>>>>>> olga
 /* Number text (1/4 - 4/4), le text affiché sur les images-carousel indiquant l'ordre des images */
 .number{
   color: #f2f2f2;
@@ -128,3 +191,15 @@ body{
   from {opacity: .4}
   to {opacity: 1}
 }
+<<<<<<< HEAD
+=======
+@import "media";
+>>>>>>> olga
+=======
+    padding:0 10px;
+    line-height: 6rem;
+    }
+}
+
+
+>>>>>>> 5e2b401e35d2032de5c2ee63a7f2badf11017f6c

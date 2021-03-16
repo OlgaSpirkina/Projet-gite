@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin marge ($font-size) {
     padding:0% 15%;
     font-size:$font-size;
@@ -5,3 +6,18 @@
 
 html {@include marge(62.5%);
 }
+=======
+@mixin marge {
+    font-size: 62.5%;
+    padding:0% 15%;
+    
+}
+
+html {
+    @include marge;
+    box-sizing:border-box;
+}
+
+
+
+>>>>>>> 5e2b401e35d2032de5c2ee63a7f2badf11017f6c
